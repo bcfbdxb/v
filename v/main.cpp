@@ -7,9 +7,17 @@
 //
 
 #include <iostream>
+# include<fstream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+
+int main(int argc, char*argv[]){
+    int a,b;
+    ifstream ou("/users/s20181106118/Desktop/ou.txt");
+    ofstream ip("/users/s20181106118/Desktop/in.txt",ios_base::out);
+    if(ip.is_open()){
+        ip<<a<<b<<endl;
+    }
+    ip.close();
     return 0;
 }
